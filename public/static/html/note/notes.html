@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Notes</title>
+</head>
+<body>
+    <header>
+        <div id="home">
+          <a href="javascript:redirectHomePageui()"><h2><strong>Application Home</strong></h2></a>
+        </div>
+        <div id="logout-btn">
+            <a href="javascript:logoutUserui()"><h2><strong>Logout</strong></h2></a>
+        </div>
+    </header>
+    <main>
+      <div id="create-note">
+        <h1>Create Note</h1> <br>
+        <form>
+            Note Title: <input name="notetitle" id="notetitle" type="text" placeholder="Note Title"> <br>
+            Note Description: <input name="notedescription" id="notedescription" type="text" placeholder="Note Description"> <br><br>
+            <button type="button" onclick="createNoteui(document.getElementById('notetitle').value, document.getElementById('notedescription').value)">Create Note</button>
+        </form>
+      </div>
+      <div id="update-note">
+        <h1>Update Note</h1> <br>
+        <form>
+            Note Title: <input name="notetitle-to-update" id="notetitle-to-update" type="text" placeholder="Note Title" disabled> <br>
+            Note Description: <input name="notedescription-to-update" id="notedescription-to-update" type="text" placeholder="Note Description"> <br><br>
+            <button type="button" id="update-note-button" onclick="updateNoteui(document.getElementById('notedescription-to-update').value, this.value)">Update Note</button>
+        </form>
+      </div>
+
+      <div id="note-list">
+
+      </div>
+    </main>
+    <footer>
+        <p>© 2018-19 Stackroute Application</p>
+    </footer>
+<script type="text/javascript" src="../../../bundle.js"></script></body>
+</html>

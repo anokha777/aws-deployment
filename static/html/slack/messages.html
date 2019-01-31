@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Channel Message</title>
+</head>
+<body>
+    <header>
+        <div id="home">
+            <a href="javascript:redirectHomePageui()"><h2><strong>Application Home</strong></h2></a>
+        </div>
+        <div id="logout-btn">
+            <a href="javascript:logoutUserui()"><h2><strong>Logout</strong></h2></a>
+        </div>
+    </header>
+    <main>
+        <div id="create-channel-message">
+            <h2>Send Channel Message</h2> <br>
+            <form>
+                Your Meaage: <input name="chmessage" id="chmessage" type="text" placeholder="#Message"> <br>
+                <button type="button" id="send-message-button-id" onclick="sendMessageui(document.getElementById('chmessage').value, this.value)">Send Message</button>
+            </form>
+        </div>
+        <div id="channel-msg"></div>
+    </main>
+    <footer>
+        <p>© 2018-19 Stackroute Application</p>
+    </footer>
+</body>
+</html>

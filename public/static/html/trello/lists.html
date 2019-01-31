@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>List of Cards</title>
+</head>
+<body>
+    <header>
+        <div id="home">
+            <!-- <button type="button" onclick="gotohome()"><h2><strong>Application Home1</strong></h2></button> -->
+            <a href="javascript:redirectHomePageui()"><h2><strong>Application Home</strong></h2></a>
+        </div>
+        <div id="logout-btn">
+            <a href="javascript:logoutUserui()"><h2><strong>Logout</strong></h2></a>
+        </div>
+    </header>
+    <main>
+        <div class="list-heading-form">
+            <div id="board-name"></div>
+            <div id="create-card">
+                <h2>Create Card</h2> <br>
+                <form>
+                    Card Title: <input name="cardtitle" id="cardtitle" type="text" placeholder="Card Title"> <br>
+                    Card Description: <input name="carddescription" id="carddescription" type="text" placeholder="Card Description"> <br><br>
+                    <button type="button" onclick="createCardui(document.getElementById('cardtitle').value, document.getElementById('carddescription').value, document.getElementById('list-board-id').value)">Create Card</button>
+                </form>
+            </div>
+            <div id="adduser-board">
+                <h2>Add Members to this Board</h2> <br>
+                <form>
+                    User ID: <input name="userid" id="userid" type="text" placeholder="User ID"> <br>
+                    <button type="button" onclick="addMembersui(document.getElementById('userid').value, document.getElementById('list-board-id').value)">Add User</button>
+                    <div id="user-added-msg"></div>
+                </form>
+            </div>
+        </div>
+        
+        <div id="cardlist-view"></div>
+        <input type="hidden" id="list-board-id">
+    </main>
+    <footer>
+        <p>© 2018-19 Stackroute Application</p>
+    </footer>
+<script type="text/javascript" src="../../../bundle.js"></script></body>
+</html>

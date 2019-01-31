@@ -1,0 +1,72 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    height: 75px;
+    background-color: rgb(236, 170, 170);
+    display: block;
+}
+
+main {
+    flex: auto;
+    background-color: rgb(226, 243, 232);
+}
+
+footer {
+    height: 40px;
+    background-color: rgb(110, 109, 109);
+    text-align: center;
+}
+
+#home {
+    height: 100%;
+    flex-grow: 1000;
+    display:inline-block;
+    align-items: flex-start;
+    float: left;
+}
+
+#logout-btn {
+    height: 100%;
+    flex-grow: 1;
+    display:inline-block;
+    align-items: flex-end;
+    float: right;
+}
+
+a {
+    text-decoration: none;
+}
+
+header a:hover {
+    color: azure;
+}
+
+.body-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.body-container > div {
+    background-color: #835f5f;
+    width: 320px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+#app-selector-header {
+    text-align: center;
+    color: rgb(53, 55, 75);
+}

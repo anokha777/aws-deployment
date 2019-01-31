@@ -1,0 +1,13 @@
+#create-note {
+    flex-grow: 1000;
+    display:inline-block;
+    align-items: flex-start;
+    float: left;
+}
+
+#update-note {
+    flex-grow: 1;
+    display:inline-block;
+    align-items: flex-end;
+    float: right;
+}

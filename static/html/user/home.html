@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Application Home</title>
+</head>
+<body>
+    <header>
+        <div id="home">
+            <!-- <button type="button" onclick="gotohome()"><h2><strong>Application Home1</strong></h2></button> -->
+            <a href="javascript:redirectHomePageui()"><h2><strong>Application Home</strong></h2></a>
+        </div>
+        <div id="logout-btn">
+            <a href="javascript:logoutUserui()"><h2><strong>Logout</strong></h2></a>
+        </div>
+    </header>
+    <main>
+      <div id="app-selector-header"><h2>Please choose one.</h2></div>
+      <div class="body-container">
+          <div>1. <a href="javascript:getNotePageui()">Note</a></div>
+          <div>2. <a href="javascript:getTrelloPageui()">Trello</a></div>
+          <div>3. <a href="javascript:getSlackChannelPageui()">Slack</a></div>  
+        </div>
+    </main>
+    <footer>
+        <p>© 2018-19 Stackroute Application</p>
+    </footer>
+</body>
+</html>
